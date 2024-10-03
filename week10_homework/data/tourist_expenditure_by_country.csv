@@ -1,0 +1,45 @@
+﻿Country,Tourist_Arrivals,Average_Per_Capita(RM),Average_Per_Diem(RM),Continent
+Singapore,"10,163,882","2,021.60",777.5,Southeast Asia
+Thailand,"1,884,306","2,103.60",427.8,Southeast Asia
+Indonesia,"3,623,277","3,571.10",691.9,Southeast Asia
+Brunei,"1,216,123","2,313.10",797.6,Southeast Asia
+Philippines,"421,908","3,277.60",728.4,Southeast Asia
+Vietnam,"400,346","3,766.30",660.8,Southeast Asia
+Others ASEAN,"170,309","3,330.50",469.1,Southeast Asia
+China,"3,114,257","4,921.00",767.7,East Asia
+Japan,"424,694","5,357.00",778.5,East Asia
+South Korea,"673,065","4,971.60",742.9,East Asia
+Taiwan,"382,916","5,832.20",942.2,East Asia
+Others East Asia,"5,331","4,119.10",629.3,East Asia
+India,"735,309","4,922.60",679.7,South Asia
+Pakistan,"105,757","4,336.40",612,South Asia
+Others South Asia,"254,822","4,098.50",611.1,South Asia
+Saudi Arabia,"121,444","11,660.10","1,078.80",West Asia
+United Arab Emirates,"11,174","10,094.90","1,042.00",West Asia
+Oman,"23,911","9,122.20",989.6,West Asia
+Kuwait,"9,632","9,080.00",889.2,West Asia
+Iran,"46,559","8,554.60",961.2,West Asia
+Others West Asia,"96,504","9,593.30",996.7,West Asia
+Canada,"87,568","4,975.80",546.9,America
+United States of America,"269,928","4,728.50",518.2,America
+Others Americas,"49,226","4,348.70",519.4,America
+United Kingdom,"346,485","6,093.50",635.8,Europe
+Ireland,"19,696","4,799.90",554.5,Europe
+Sweden,"29,592","4,692.00",608,Europe
+Denmark,"22,314","4,412.30",469.2,Europe
+Finland,"13,557","4,166.20",612.2,Europe
+Norway,"14,585","4,090.40",548.2,Europe
+Italy,"54,710","4,373.30",549.1,Europe
+Spain,"43,616","4,177.90",469.8,Europe
+France,"141,661","4,445.90",466.7,Europe
+Belgium,"22,082","4,042.60",477.3,Europe
+Netherlands,"82,110","4,024.10",420,Europe
+Germany,"130,221","4,835.90",556,Europe
+Switzerland,"25,659","4,390.80",480.5,Europe
+Russia,"79,984","4,607.40",521.4,Europe
+Others Europe,"155,032","4,855.60",554.4,Europe
+Australia,"368,271","4,722.20",621.3,Non Southeast Asia
+New Zealand,"50,140","4,439.80",602.6,Non Southeast Asia
+South Africa,"22,674","4,352.90",549.2,Non Southeast Asia
+Central Asia,"35,931","4,470.10",505.8,Non Southeast Asia
+Others,"150,216","5,981.80",699.7,Non Southeast Asia
