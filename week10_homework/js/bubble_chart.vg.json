@@ -1,11 +1,14 @@
 {
-    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "width": 800,
     "height": 600,
-    "title": "Tourist Spending Patterns in Malaysia, 2019",
+    "title": {
+        "text": "Tourist Spending Patterns in Malaysia, 2019",
+        "fontSize": 16
+    },
     "data": {
         "url": "https://raw.githubusercontent.com/yewwai/FIT3179/refs/heads/main/week10_homework/data/tourist_expenditure_by_country.csv"
-    },
+    }, 
     "params": [
         {
             "name": "Tourist_Arrivals_Above",
@@ -13,8 +16,8 @@
             "bind": {
                 "input": "range",
                 "min": 0,
-                "max": 3000000,
-                "step": 100000,
+                "max": 500000,
+                "step": 10000,
                 "name": "Tourist Arrivals: "
             }
         },
@@ -49,7 +52,7 @@
     "transform": [
         {"filter": "datum.Tourist_Arrivals > Tourist_Arrivals_Above"},
         {
-            "filter": "Continent_selection === null || datum.Continent === Continent_selection"
+            "filter": "Continent_selection == null || datum.Continent == Continent_selection"
         }
     ],
     "encoding": {
@@ -58,14 +61,14 @@
             "type": "quantitative",
             "title": "Average per Capita Spending (RM)",
             "axis": {"tickCount": 7},
-            "scale": {"domain": [0, 20000]}
+            "scale": {"domain": [0, 12000]}
         },
         "y": {
             "field": "Average_Per_Diem(RM)",
             "type": "quantitative",
             "title": "Average per Diem Spending (RM)",
             "axis": {"tickCount": 6},
-            "scale": {"domain": [400, 2000]}
+            "scale": {"domain": [400, 1100]}
         }
     },
     "layer": [
@@ -78,7 +81,7 @@
                     "title": "Tourist Arrivals",
                     "scale": {
                         "type": "threshold",
-                        "domain": [10000, 50000, 100000, 500000, 10000000],
+                        "domain": [10000, 50000, 100000, 500000, 3000000],
                         "range": [50, 100, 250, 500, 800, 2000]
                     },
                     "legend": {"format": ".1s"}
@@ -102,7 +105,8 @@
                             "#ff7f00",
                             "#a6cee3",
                             "#377eb8",
-                            "#a65628"
+                            "#a65628",
+                            "#f5c3c3"
                         ]
                     }
                 },
@@ -113,6 +117,22 @@
                     {"field": "Average_Per_Capita(RM)", "type": "quantitative", "format": ",", "title": "Average per Capita Spending (RM)"},
                     {"field": "Average_Per_Diem(RM)", "type": "quantitative", "format": ",", "title": "Average per Diem Spending (RM)"}
                 ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "middle",
+                "fontSize": 9,
+                "fontStyle": "bold",
+                "dx": 60,
+                "dy": 10
+            },
+            "encoding": {
+                "text": {"condition": {"test": "datum['Average_Per_Diem(RM)'] == 1042", "value": ["Despite lower numbers, ", "United Arab Emirates tourists ", "contribute significantly to", "Malaysia's tourism through ", "high spending."]}},
+                "color": {"value": "black"},
+                "opacity": {"condition": {"test": "datum['Average_Per_Diem(RM)'] == 1042", "value": 1}, "value": 0}
             }
         }
     ]
