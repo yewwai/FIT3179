@@ -78,7 +78,7 @@
                 "size": {
                     "field": "Tourist_Arrivals",
                     "type": "quantitative",
-                    "title": "Tourist Arrivals",
+                    "title": "Number of Tourists",
                     "scale": {
                         "type": "threshold",
                         "domain": [10000, 50000, 100000, 500000, 1000000],
