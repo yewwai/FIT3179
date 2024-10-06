@@ -1,0 +1,265 @@
+﻿Year,Main_Purpose,Country,Percentage,Tourist_Arrivals,Continent
+2019,Holiday,Singapore,40.8,10163882,Southeast Asia
+2019,Holiday,Thailand,64.3,1884306,Southeast Asia
+2019,Holiday,Indonesia,43.5,3623277,Southeast Asia
+2019,Holiday,Brunei,61.5,1216123,Southeast Asia
+2019,Holiday,Philippines,78.6,421908,Southeast Asia
+2019,Holiday,Vietnam,91.7,400346,Southeast Asia
+2019,Holiday,China,83.5,3114257,East Asia
+2019,Holiday,Japan,70,424694,East Asia
+2019,Holiday,South Korea,81.8,673065,East Asia
+2019,Holiday,Taiwan,94.4,382916,East Asia
+2019,Holiday,India,72.2,735309,South Asia
+2019,Holiday,Pakistan,66.5,105757,South Asia
+2019,Holiday,Saudi Arabia,75.9,121444,West Asia
+2019,Holiday,United Arab Emirates,72.6,11174,West Asia
+2019,Holiday,Oman,71.8,23911,West Asia
+2019,Holiday,Kuwait,90,9632,West Asia
+2019,Holiday,Iran,92.1,46559,West Asia
+2019,Holiday,Canada,80.8,87568,America
+2019,Holiday,United States of America,82.9,269928,America
+2019,Holiday,United Kingdom,83.9,346485,Europe
+2019,Holiday,Ireland,73.1,19696,Europe
+2019,Holiday,Sweden,91.7,29592,Europe
+2019,Holiday,Denmark,94.7,22314,Europe
+2019,Holiday,Finland,78.7,13557,Europe
+2019,Holiday,Norway,69.1,14585,Europe
+2019,Holiday,Italy,75.3,54710,Europe
+2019,Holiday,Spain,92.3,43616,Europe
+2019,Holiday,France,84.9,141661,Europe
+2019,Holiday,Belgium,83.6,22082,Europe
+2019,Holiday,Netherlands,94.9,82110,Europe
+2019,Holiday,Germany,90.4,130221,Europe
+2019,Holiday,Switzerland,93.6,25659,Europe
+2019,Holiday,Russia,83.3,79984,Europe
+2019,Holiday,Australia,82.5,368271,Non Southeast Asia
+2019,Holiday,New Zealand,83.4,50140,Non Southeast Asia
+2019,Holiday,South Africa,71.7,22674,Non Southeast Asia
+2019,Holiday,Central Asia,83.1,NA,Non Southeast Asia
+2019,Holiday,Other ASEAN,77,NA,Southeast Asia
+2019,Holiday,Other East Asia,67.1,NA,East Asia
+2019,Holiday,Other South Asia,68.6,NA,South Asia
+2019,Holiday,Other West Asia,69.2,NA,West Asia
+2019,Holiday,Other Americas,90.1,NA,America
+2019,Holiday,Other Europe,82.7,NA,Europe
+2019,Holiday,Others,73.3,NA,Non Southeast Asia
+2019,Visiting Friends & Family,Singapore,27.5,10163882,Southeast Asia
+2019,Visiting Friends & Family,Thailand,11.9,1884306,Southeast Asia
+2019,Visiting Friends & Family,Indonesia,17.8,3623277,Southeast Asia
+2019,Visiting Friends & Family,Brunei,13.9,1216123,Southeast Asia
+2019,Visiting Friends & Family,Philippines,9.6,421908,Southeast Asia
+2019,Visiting Friends & Family,Vietnam,1.6,400346,Southeast Asia
+2019,Visiting Friends & Family,China,2.4,3114257,East Asia
+2019,Visiting Friends & Family,Japan,0.2,424694,East Asia
+2019,Visiting Friends & Family,South Korea,0.7,673065,East Asia
+2019,Visiting Friends & Family,Taiwan,3.8,382916,East Asia
+2019,Visiting Friends & Family,India,1.7,735309,South Asia
+2019,Visiting Friends & Family,Pakistan,3.8,105757,South Asia
+2019,Visiting Friends & Family,Saudi Arabia,1.3,121444,West Asia
+2019,Visiting Friends & Family,United Arab Emirates,1.8,11174,West Asia
+2019,Visiting Friends & Family,Oman,7.2,23911,West Asia
+2019,Visiting Friends & Family,Kuwait,0,9632,West Asia
+2019,Visiting Friends & Family,Iran,1.4,46559,West Asia
+2019,Visiting Friends & Family,Canada,13.3,87568,America
+2019,Visiting Friends & Family,United States of America,4.6,269928,America
+2019,Visiting Friends & Family,United Kingdom,5.9,346485,Europe
+2019,Visiting Friends & Family,Ireland,12.9,19696,Europe
+2019,Visiting Friends & Family,Sweden,0,29592,Europe
+2019,Visiting Friends & Family,Denmark,0,22314,Europe
+2019,Visiting Friends & Family,Finland,6.5,13557,Europe
+2019,Visiting Friends & Family,Norway,3.6,14585,Europe
+2019,Visiting Friends & Family,Italy,1.4,54710,Europe
+2019,Visiting Friends & Family,Spain,0.7,43616,Europe
+2019,Visiting Friends & Family,France,2.4,141661,Europe
+2019,Visiting Friends & Family,Belgium,7.6,22082,Europe
+2019,Visiting Friends & Family,Netherlands,1.3,82110,Europe
+2019,Visiting Friends & Family,Germany,2.8,130221,Europe
+2019,Visiting Friends & Family,Switzerland,1.8,25659,Europe
+2019,Visiting Friends & Family,Russia,1.9,79984,Europe
+2019,Visiting Friends & Family,Australia,5,368271,Non Southeast Asia
+2019,Visiting Friends & Family,New Zealand,2.1,50140,Non Southeast Asia
+2019,Visiting Friends & Family,South Africa,1.3,22674,Non Southeast Asia
+2019,Visiting Friends & Family,Central Asia,0.6,NA,Non Southeast Asia
+2019,Visiting Friends & Family,Other ASEAN,7.6,NA,Southeast Asia
+2019,Visiting Friends & Family,Other East Asia,19.1,NA,East Asia
+2019,Visiting Friends & Family,Other South Asia,5.8,NA,South Asia
+2019,Visiting Friends & Family,Other West Asia,7.8,NA,West Asia
+2019,Visiting Friends & Family,Other Americas,2.5,NA,America
+2019,Visiting Friends & Family,Other Europe,2.7,NA,Europe
+2019,Visiting Friends & Family,Others,3.1,NA,Non Southeast Asia
+2019,Business,Singapore,3.3,10163882,Southeast Asia
+2019,Business,Thailand,1.6,1884306,Southeast Asia
+2019,Business,Indonesia,1.6,3623277,Southeast Asia
+2019,Business,Brunei,1,1216123,Southeast Asia
+2019,Business,Philippines,1.9,421908,Southeast Asia
+2019,Business,Vietnam,0.2,400346,Southeast Asia
+2019,Business,China,0.9,3114257,East Asia
+2019,Business,Japan,20.1,424694,East Asia
+2019,Business,South Korea,1.2,673065,East Asia
+2019,Business,Taiwan,0.8,382916,East Asia
+2019,Business,India,0.8,735309,South Asia
+2019,Business,Pakistan,2.3,105757,South Asia
+2019,Business,Saudi Arabia,0.7,121444,West Asia
+2019,Business,United Arab Emirates,3.7,11174,West Asia
+2019,Business,Oman,0.5,23911,West Asia
+2019,Business,Kuwait,0,9632,West Asia
+2019,Business,Iran,0,46559,West Asia
+2019,Business,Canada,3.4,87568,America
+2019,Business,United States of America,2.8,269928,America
+2019,Business,United Kingdom,3.6,346485,Europe
+2019,Business,Ireland,1.1,19696,Europe
+2019,Business,Sweden,2.8,29592,Europe
+2019,Business,Denmark,0,22314,Europe
+2019,Business,Finland,0,13557,Europe
+2019,Business,Norway,0,14585,Europe
+2019,Business,Italy,1.6,54710,Europe
+2019,Business,Spain,0.3,43616,Europe
+2019,Business,France,2.2,141661,Europe
+2019,Business,Belgium,0.6,22082,Europe
+2019,Business,Netherlands,1.2,82110,Europe
+2019,Business,Germany,1.2,130221,Europe
+2019,Business,Switzerland,1.8,25659,Europe
+2019,Business,Russia,3.8,79984,Europe
+2019,Business,Australia,3.5,368271,Non Southeast Asia
+2019,Business,New Zealand,0.7,50140,Non Southeast Asia
+2019,Business,South Africa,0.9,22674,Non Southeast Asia
+2019,Business,Central Asia,2.9,NA,Non Southeast Asia
+2019,Business,Other ASEAN,0,NA,Southeast Asia
+2019,Business,Other East Asia,3.5,NA,East Asia
+2019,Business,Other South Asia,3.1,NA,South Asia
+2019,Business,Other West Asia,1.2,NA,West Asia
+2019,Business,Other Americas,1.9,NA,America
+2019,Business,Other Europe,3.5,NA,Europe
+2019,Business,Others,2.6,NA,Non Southeast Asia
+2019,Sports,Singapore,0.5,10163882,Southeast Asia
+2019,Sports,Thailand,1.6,1884306,Southeast Asia
+2019,Sports,Indonesia,0.4,3623277,Southeast Asia
+2019,Sports,Brunei,0.8,1216123,Southeast Asia
+2019,Sports,Philippines,0.5,421908,Southeast Asia
+2019,Sports,Vietnam,0.8,400346,Southeast Asia
+2019,Sports,China,0.7,3114257,East Asia
+2019,Sports,Japan,0,424694,East Asia
+2019,Sports,South Korea,0,673065,East Asia
+2019,Sports,Taiwan,0,382916,East Asia
+2019,Sports,India,0.6,735309,South Asia
+2019,Sports,Pakistan,0,105757,South Asia
+2019,Sports,Saudi Arabia,0,121444,West Asia
+2019,Sports,United Arab Emirates,14.6,11174,West Asia
+2019,Sports,Oman,0.5,23911,West Asia
+2019,Sports,Kuwait,0,9632,West Asia
+2019,Sports,Iran,0,46559,West Asia
+2019,Sports,Canada,0,87568,America
+2019,Sports,United States of America,1,269928,America
+2019,Sports,United Kingdom,0.3,346485,Europe
+2019,Sports,Ireland,0,19696,Europe
+2019,Sports,Sweden,5.6,29592,Europe
+2019,Sports,Denmark,0,22314,Europe
+2019,Sports,Finland,0,13557,Europe
+2019,Sports,Norway,5.5,14585,Europe
+2019,Sports,Italy,9.6,54710,Europe
+2019,Sports,Spain,0.3,43616,Europe
+2019,Sports,France,1.3,141661,Europe
+2019,Sports,Belgium,1.8,22082,Europe
+2019,Sports,Netherlands,0,82110,Europe
+2019,Sports,Germany,1.2,130221,Europe
+2019,Sports,Switzerland,2.3,25659,Europe
+2019,Sports,Russia,0,79984,Europe
+2019,Sports,Australia,0.8,368271,Non Southeast Asia
+2019,Sports,New Zealand,0,50140,Non Southeast Asia
+2019,Sports,South Africa,18.8,22674,Non Southeast Asia
+2019,Sports,Central Asia,5.4,NA,Non Southeast Asia
+2019,Sports,Other ASEAN,7.2,NA,Southeast Asia
+2019,Sports,Other East Asia,3.2,NA,East Asia
+2019,Sports,Other South Asia,0,NA,South Asia
+2019,Sports,Other West Asia,2.7,NA,West Asia
+2019,Sports,Other Americas,1.2,NA,America
+2019,Sports,Other Europe,2.7,NA,Europe
+2019,Sports,Others,1.9,NA,Non Southeast Asia
+2019,Shopping,Singapore,23,10163882,Southeast Asia
+2019,Shopping,Thailand,12.8,1884306,Southeast Asia
+2019,Shopping,Indonesia,6,3623277,Southeast Asia
+2019,Shopping,Brunei,19.8,1216123,Southeast Asia
+2019,Shopping,Philippines,2.8,421908,Southeast Asia
+2019,Shopping,Vietnam,0.1,400346,Southeast Asia
+2019,Shopping,China,11.9,3114257,East Asia
+2019,Shopping,Japan,0.3,424694,East Asia
+2019,Shopping,South Korea,12.7,673065,East Asia
+2019,Shopping,Taiwan,0,382916,East Asia
+2019,Shopping,India,20.2,735309,South Asia
+2019,Shopping,Pakistan,0,105757,South Asia
+2019,Shopping,Saudi Arabia,0.6,121444,West Asia
+2019,Shopping,United Arab Emirates,1.8,11174,West Asia
+2019,Shopping,Oman,0,23911,West Asia
+2019,Shopping,Kuwait,2.7,9632,West Asia
+2019,Shopping,Iran,0,46559,West Asia
+2019,Shopping,Canada,0,87568,America
+2019,Shopping,United States of America,0,269928,America
+2019,Shopping,United Kingdom,0.3,346485,Europe
+2019,Shopping,Ireland,0,19696,Europe
+2019,Shopping,Sweden,0,29592,Europe
+2019,Shopping,Denmark,0,22314,Europe
+2019,Shopping,Finland,0,13557,Europe
+2019,Shopping,Norway,0,14585,Europe
+2019,Shopping,Italy,0,54710,Europe
+2019,Shopping,Spain,0,43616,Europe
+2019,Shopping,France,0,141661,Europe
+2019,Shopping,Belgium,0,22082,Europe
+2019,Shopping,Netherlands,0,82110,Europe
+2019,Shopping,Germany,0,130221,Europe
+2019,Shopping,Switzerland,0,25659,Europe
+2019,Shopping,Russia,0,79984,Europe
+2019,Shopping,Australia,0,368271,Non Southeast Asia
+2019,Shopping,New Zealand,0,50140,Non Southeast Asia
+2019,Shopping,South Africa,0,22674,Non Southeast Asia
+2019,Shopping,Central Asia,0,NA,Non Southeast Asia
+2019,Shopping,Other ASEAN,2.5,NA,Southeast Asia
+2019,Shopping,Other East Asia,1.7,NA,East Asia
+2019,Shopping,Other South Asia,0,NA,South Asia
+2019,Shopping,Other West Asia,0,NA,West Asia
+2019,Shopping,Other Americas,0,NA,America
+2019,Shopping,Other Europe,0,NA,Europe
+2019,Shopping,Others,0.4,NA,Non Southeast Asia
+2019,Honeymoon,Singapore,0.4,10163882,Southeast Asia
+2019,Honeymoon,Thailand,0,1884306,Southeast Asia
+2019,Honeymoon,Indonesia,0.4,3623277,Southeast Asia
+2019,Honeymoon,Brunei,0,1216123,Southeast Asia
+2019,Honeymoon,Philippines,0.3,421908,Southeast Asia
+2019,Honeymoon,Vietnam,0,400346,Southeast Asia
+2019,Honeymoon,China,0.1,3114257,East Asia
+2019,Honeymoon,Japan,0,424694,East Asia
+2019,Honeymoon,South Korea,0,673065,East Asia
+2019,Honeymoon,Taiwan,0,382916,East Asia
+2019,Honeymoon,India,1.1,735309,South Asia
+2019,Honeymoon,Pakistan,5.5,105757,South Asia
+2019,Honeymoon,Saudi Arabia,20.3,121444,West Asia
+2019,Honeymoon,United Arab Emirates,3.7,11174,West Asia
+2019,Honeymoon,Oman,15,23911,West Asia
+2019,Honeymoon,Kuwait,4,9632,West Asia
+2019,Honeymoon,Iran,1.4,46559,West Asia
+2019,Honeymoon,Canada,0,87568,America
+2019,Honeymoon,United States of America,0.3,269928,America
+2019,Honeymoon,United Kingdom,1,346485,Europe
+2019,Honeymoon,Ireland,0,19696,Europe
+2019,Honeymoon,Sweden,0,29592,Europe
+2019,Honeymoon,Denmark,0,22314,Europe
+2019,Honeymoon,Finland,0,13557,Europe
+2019,Honeymoon,Norway,0,14585,Europe
+2019,Honeymoon,Italy,0,54710,Europe
+2019,Honeymoon,Spain,0.3,43616,Europe
+2019,Honeymoon,France,1.4,141661,Europe
+2019,Honeymoon,Belgium,1.2,22082,Europe
+2019,Honeymoon,Netherlands,0,82110,Europe
+2019,Honeymoon,Germany,0.1,130221,Europe
+2019,Honeymoon,Switzerland,0,25659,Europe
+2019,Honeymoon,Russia,0,79984,Europe
+2019,Honeymoon,Australia,0.3,368271,Non Southeast Asia
+2019,Honeymoon,New Zealand,0,50140,Non Southeast Asia
+2019,Honeymoon,South Africa,0,22674,Non Southeast Asia
+2019,Honeymoon,Central Asia,0.6,NA,Non Southeast Asia
+2019,Honeymoon,Other ASEAN,0,NA,Southeast Asia
+2019,Honeymoon,Other East Asia,1.4,NA,East Asia
+2019,Honeymoon,Other South Asia,0,NA,South Asia
+2019,Honeymoon,Other West Asia,11.6,NA,West Asia
+2019,Honeymoon,Other Americas,0,NA,America
+2019,Honeymoon,Other Europe,0,NA,Europe
+2019,Honeymoon,Others,10.2,NA,Non Southeast Asia
