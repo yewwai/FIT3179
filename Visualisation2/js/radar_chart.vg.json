@@ -2,9 +2,14 @@
     "$schema": "https://vega.github.io/schema/vega/v5.json",
     "width": 400,
     "height": 400,
+    "padding": {"left": 25, "right": 40, "top": 40, "bottom": 10},
+    "autosize": {"type": "none", "contains": "padding"},
     "title": {
         "text": "Main Purpose of Visit",
-        "fontSize": 16
+        "fontSize": 16,
+        "align": "left",
+        "anchor": "start",
+        "offset": 15
     },
     "signals": [
         {
@@ -42,7 +47,7 @@
             "transform": [
                 {
                     "type": "filter",
-                    "expr": "datum.Country === Country_selection || Country_selection == null"
+                    "expr": "Country_selection == null || datum.Country === Country_selection "
                 }
             ]
         },
