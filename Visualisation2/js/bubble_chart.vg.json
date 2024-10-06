@@ -1,0 +1,178 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 800,
+    "height": 600,
+    "title": {
+        "text": "Tourist Spending Patterns in Malaysia, 2019",
+        "fontSize": 16
+    },
+    "data": {
+        "url": "https://raw.githubusercontent.com/yewwai/FIT3179/refs/heads/main/week10_homework/data/tourist_expenditure_by_country.csv"
+    }, 
+    "params": [
+        {
+            "name": "Tourist_Arrivals_Above",
+            "value": 0,
+            "bind": {
+                "input": "range",
+                "min": 0,
+                "max": 1000000,
+                "step": 50000,
+                "name": "Tourist Arrivals: "
+            }
+        },
+        {
+            "name": "Year",
+            "value": 2019,
+            "bind": {
+                "input": "range",
+                "min": 2015,
+                "max": 2019,
+                "step": 1,
+                "name": "Year: "
+            }
+        },
+        {
+            "name": "Continent_selection",
+            "bind": {
+                "input": "select",
+                "options": [
+                    null,
+                    "Southeast Asia",
+                    "East Asia",
+                    "South Asia",
+                    "West Asia",
+                    "America",
+                    "Europe",
+                    "Non Southeast Asia"
+                ],
+                "labels": [
+                    "All",
+                    "Southeast Asia",
+                    "East Asia",
+                    "South Asia",
+                    "West Asia",
+                    "America",
+                    "Europe",
+                    "Non Southeast Asia"
+                ],
+                "name": "Continent Selection: "
+            }
+        }
+    ],
+    "transform": [
+        {"filter": "datum.Tourist_Arrivals > Tourist_Arrivals_Above"},
+        {"filter": "Year == null || datum.Year == Year"},
+        {
+            "filter": "Continent_selection == null || datum.Continent == Continent_selection"
+        }
+    ],
+    "encoding": {
+        "x": {
+            "field": "Average_Per_Capita(RM)",
+            "type": "quantitative",
+            "title": "Average per Capita Spending (RM)",
+            "axis": {"tickCount": 7},
+            "scale": {"domain": [0, 12000]}
+        },
+        "y": {
+            "field": "Average_Per_Diem(RM)",
+            "type": "quantitative",
+            "title": "Average per Diem Spending (RM)",
+            "axis": {"tickCount": 6},
+            "scale": {"domain": [400, 1100]}
+        }
+    },
+    "layer": [
+        {
+            "mark": "circle",
+            "encoding": {
+                "size": {
+                    "field": "Tourist_Arrivals",
+                    "type": "quantitative",
+                    "title": "Number of Tourists",
+                    "scale": {
+                        "type": "threshold",
+                        "domain": [10000, 50000, 100000, 500000, 1000000],
+                        "range": [50, 100, 250, 500, 800, 2000]
+                    },
+                    "legend": {"format": ".1s"}
+                },
+                "color": {
+                    "field": "Continent",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": [
+                            "Southeast Asia",
+                            "East Asia",
+                            "South Asia",
+                            "West Asia",
+                            "America",
+                            "Europe",
+                            "Non Southeast Asia"
+                        ],
+                        "range": [
+                            "#e41a1c",
+                            "#984ea3",
+                            "#ff7f00",
+                            "#a6cee3",
+                            "#377eb8",
+                            "#a65628",
+                            "#f5c3c3"
+                        ]
+                    }
+                },
+                "opacity": {"value": 0.6},
+                "tooltip": [
+                    {"field": "Country", "type": "nominal"},
+                    {"field": "Tourist_Arrivals", "type": "quantitative", "format": ",", "title": "Number of Tourists"},
+                    {"field": "Average_Per_Capita(RM)", "type": "quantitative", "format": ",", "title": "Average per Capita Spending (RM)"},
+                    {"field": "Average_Per_Diem(RM)", "type": "quantitative", "format": ",", "title": "Average per Diem Spending (RM)"}
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "middle",
+                "fontSize": 9,
+                "fontStyle": "bold",
+                "dx": 60,
+                "dy": 6
+            },
+            "encoding": {
+                "text": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 10094.9", "value": ["Despite lower numbers, ", "United Arab Emirates tourists ", "contribute significantly to", "Malaysia's tourism through ", "high spending."]}},
+                "color": {"value": "black"},
+                "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 10094.9", "value": 1}, "value": 0}
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": -12,
+                "fontSize": 10,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {"field": "Country", "type": "nominal"},
+                "color": {"value": "black"},
+                "opacity": {
+                    "condition": {
+                        "test": "datum['Country'] == 'United Arab Emirates'",
+                        "value": 1
+                    },
+                    "value": 0
+                },
+                "tooltip": [
+                    {"field": "Country", "type": "nominal"},
+                    {"field": "Tourist_Arrivals", "type": "quantitative", "format": ",", "title": "Number of Tourists"},
+                    {"field": "Average_Per_Capita(RM)", "type": "quantitative", "format": ",", "title": "Average per Capita Spending (RM)"},
+                    {"field": "Average_Per_Diem(RM)", "type": "quantitative", "format": ",", "title": "Average per Diem Spending (RM)"}
+                ]
+            }
+        }
+    ]
+}
