@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 800,
-    "height": 600,
+    "width": 600,
+    "height": 400,
     "title": {
-        "text": "Tourist Spending Patterns in Malaysia, 2019",
+        "text": "Tourist Spending Patterns in Malaysia",
         "fontSize": 16
     },
     "data": {
@@ -84,6 +84,19 @@
         }
     },
     "layer": [
+        {
+            "transform": [{ "filter": { "field": "Country", "equal": "Oman" } }, { "filter": { "param": "Year" } }],
+            "mark": {
+                "type": "text",
+                "fontSize": 80,
+                "dx": -40,
+                "dy": 30,
+                "opacity": 0.06,
+                "align": "left",
+                "baseline": "top"
+            },
+            "encoding": { "text": { "field": "Year", "type": "nominal" } }
+        },
         {
             "params": [
                 {
@@ -176,22 +189,7 @@
                 ]
             }
         },
-        {
-            "mark": {
-                "type": "text",
-                "align": "center",
-                "baseline": "middle",
-                "fontSize": 9,
-                "fontStyle": "bold",
-                "dx": 60,
-                "dy": 6
-            },
-            "encoding": {
-                "text": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 10094.9", "value": ["Despite lower numbers, ", "United Arab Emirates tourists ", "contribute significantly to", "Malaysia's tourism through ", "high spending."]}},
-                "color": {"value": "black"},
-                "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 10094.9", "value": 1}, "value": 0}
-            }
-        },
+        
         {
             "mark": {
                 "type": "text",
