@@ -60,7 +60,8 @@
                     "field": "Components",
                     "type": "nominal",
                     "scale": {
-                        "scheme": "accent"
+                        "range": ["#CC7722", "#FF7518", "#FFE5B4", "#D8BFD8", "#C9A9A6", "#F89880", "#C19A6B", 
+                        "#967969", "#80461B","#D2B48C", "#CBC3E3"]
                     }
                 },
                 "opacity": {
