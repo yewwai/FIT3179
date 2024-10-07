@@ -708,7 +708,7 @@
             "range": ["#e41a1c", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628", "#e37383",
                      "#CC7722", "#FF7518", "#FFE5B4", "#D8BFD8", "#C9A9A6", "#F89880", "#C19A6B", "#967969", "#80461B",
                      "#D2B48C", "#CBC3E3", "#CCCCFF", "#A7C7E7", "#96DED1", "#7393B3", "#5D3FD3"],
-            "domain": ["South East Asia", "East Asia", "South Asia", "West Asia", "America", "Europe", "Non South East Asia",
+            "domain": ["America", "East Asia", "Europe", "Non South East Asia", "South Asia", "South East Asia", "West Asia",
                        "Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Labuan", "Melaka", "Negeri Sembilan", "Pahang", "Penang",
                        "Perak", "Perlis", "Putrajaya", "Sabah", "Sarawak", "Selangor", "Terengganu"]
         },
