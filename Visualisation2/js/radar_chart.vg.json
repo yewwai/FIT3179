@@ -47,12 +47,12 @@
             "transform": [
                 {
                     "type": "filter",
-                    "expr": "Country_selection == null || datum.Country === Country_selection "
+                    "expr": "Country_selection == null || datum.Country == Country_selection"
                 }
             ]
         },
         {
-            "name": "Main_Purpose_Of_Visit",
+            "name": "purposes",
             "source": "table",
             "transform": [
                 {
@@ -101,7 +101,7 @@
                 "facet": {
                     "data": "table",
                     "name": "facet",
-                    "groupby": "[Country]"
+                    "groupby": ["Country"]
                 }
             },
             "marks": [
@@ -127,7 +127,7 @@
         {
             "type": "rule",
             "name": "radial-grid",
-            "from": {"data": "Main_Purpose_Of_Visit"},
+            "from": {"data": "purposes"},
             "zindex": 0,
             "encode": {
                 "enter": {
@@ -157,7 +157,7 @@
         {
             "type": "text",
             "name": "key-label",
-            "from": {"data": "Main_Purpose_Of_Visit"},
+            "from": {"data": "purposes"},
             "zindex": 1,
             "encode": {
                 "enter": {
