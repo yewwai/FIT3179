@@ -1,61 +1,12 @@
-﻿Components,Year,Expenditure(RM Million)
-Shopping,2015,21634.4
-Accommodation,2015,17556.4
-Food and Beverage,2015,9262
-Local Transportation,2015,4561.9
-Organised Tours,2015,4008.9
-Entertainment,2015,2488.3
-Domestic Airfares,2015,2419.2
-International Airfares,2015,2557.4
-Medical,2015,2142.7
-Fuel,2015,622.1
-Sports,2015,207.4
-Miscellaneous,2015,1658.9
-Shopping,2016,26025.1
-Accommodation,2016,20442.5
-Food and Beverage,2016,10754.9
-Local Transportation,2016,5418.5
-Organised Tours,2016,4433.3
-Entertainment,2016,3201.8
-Domestic Airfares,2016,2545
-International Airfares,2016,3612.3
-Medical,2016,2955.5
-Fuel,2016,656.8
-Sports,2016,246.3
-Miscellaneous,2016,1806.2
-Shopping,2017,26868
-Accommodation,2017,21034.2
-Food and Beverage,2017,10927.9
-Local Transportation,2017,4765.6
-Organised Tours,2017,4026.1
-Entertainment,2017,3204.4
-Domestic Airfares,2017,2629.3
-International Airfares,2017,3368.8
-Medical,2017,3040.1
-Fuel,2017,575.2
-Sports,2017,246.5
-Miscellaneous,2017,1479
-Shopping,2018,28101.2
-Accommodation,2018,21622.7
-Food and Beverage,2018,11274.1
-Local Transportation,2018,5132.2
-Organised Tours,2018,3701.9
-Entertainment,2018,3028.9
-Domestic Airfares,2018,2524.1
-International Airfares,2018,3786.1
-Medical,2018,2860.6
-Fuel,2018,588.9
-Sports,2018,252.4
-Miscellaneous,2018,1262
+Components,Year,Expenditure(RM Million)
 Shopping,2019,28944.2
 Accommodation,2019,20674.4
 Food and Beverage,2019,11457.1
 Local Transportation,2019,6546.9
 Organised Tours,2019,5427
-Entertainment,2019,2928.9
-Domestic Airfares,2019,2239.7
 International Airfares,2019,4221
+Entertainment,2019,2928.9
 Medical,2019,2928.9
+Domestic Airfares,2019,2239.7
 Fuel,2019,258.4
 Sports,2019,172.3
-Miscellaneous,2019,344.6
