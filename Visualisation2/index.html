@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FIT3179 Data Visualisation 2</title>
+    <!-- Import Vega & Vega-Lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+</head>
+
+<body>
+  
+  <div class = "page">
+
+    <!-- pure grid group-->
+    <div class = "pure-g" style = "text-align: center;">
+      <div class = "pure-u-1-1">
+          <!-- Title of the page-->
+          <h1>Analysing International Tourism in Malaysia</h1>
+      </div>
+    </div>
+
+    <!-- pure grid group-->
+    <!-- Choropleth Map-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-1">
+        <h2>Discovering Malaysia: Global Visitors at a Glance</h2>
+        <br>
+        <div class = "pure-u-1-1">
+          <div id = "choropleth_map" class = "vis-container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end pure grid group-->
+    <br>
+
+    <!-- Header for Alluvial Diagram-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-1">
+        <h2>Discovering Malaysia: A Flow of Tourist Pathways Across States and Continents</h2>
+        <br>
+        <div class = "pure-u-1-1">
+          <div id = "alluvial_diagram" class = "vis-container"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Header for Bubble Chart-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-1">
+        <h2>Global Travel Splurge: Who Spends the Most in Malaysia?</h2>
+        <br>
+      </div>
+    </div>
+
+    <!-- pure grid group-->
+    <!-- Bubble Chart-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-2">
+        <div id = "bubble_chart" class = "vis-container"></div>
+      </div>
+      <div class = "pure-u-1-2">
+        <div class = "description description-right" style = "padding-top: 180px;">
+          <p style = "color: grey; font-size: 16px; font-weight: 600;">Note: Zoom in for a closer look at the data points.</p>
+          <p><strong style = "color: #6495ED; font-weight: 900;">Smaller tourist groups</strong> from 
+            <strong style = "color: #6495ED; font-weight: 900;">West Asia</strong></strong>, like the 
+            <strong style = "color: #6495ED; font-weight: 900;">United Arab Emirates</strong>, spend 
+            <strong style = "color: #6495ED; font-weight: 900;">significantly more</strong> compared to 
+            <strong style = "color: #6495ED; font-weight: 900;">high-volume tourists</strong> from other continents.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- end pure grid group-->
+
+    <!-- Header for Radial Plot-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-1">
+        <h2>Unveiling Tourist Spending Patterns: A Deep Dive into Where the Money Goes</h2>
+        <br>
+      </div>
+    </div>
+
+    <!-- pure grid group-->
+    <!-- Bubble Chart-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-2">
+        <div class = "description description-left" style = "padding-top: 180px;">
+          <p><strong style = "color: #6495ED; font-weight: 900;">Most tourist spending in Malaysia</strong> goes to 
+            <strong style = "color: #6495ED; font-weight: 900;">shopping</strong>, solidifying its status as a shopping paradise.
+          </p>
+        </div>
+      </div>
+      <div class = "pure-u-1-2">
+        <div id = "radial_plot" class = "vis-container"></div>
+      </div>
+    </div>
+    <br>
+    <!-- end pure grid group-->
+
+    <!-- Header for Radar Chart-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-1">
+        <h2>Unpacking Tourist Journeys: Main Purposes and Engaged Activities in Malaysia</h2>
+        <br>
+      </div>
+    </div>
+
+    <!-- pure grid group-->
+    <!-- Radar Chart-->
+    <div class = "pure-g">
+      <div class = "pure-u-1-2">
+        <div id = "radar_chart" class = "vis-container"></div>
+      </div>
+      <div class = "pure-u-1-2">
+        <div id = "radar_chart2" class = "vis-container"></div>
+      </div>
+    </div>
+    <br>
+    <!-- end pure grid group-->
+
+  </div>
+
+  <script type="text/javascript">
+    var specVis1 = "js/choropleth_map.vg.json";
+    var specVis2 = "js/bubble_chart.vg.json";
+    var specVis3 = "js/radial_plot.vg.json";
+    var specVis4 = "js/radar_chart.vg.json";
+    var specVis5 = "js/radar_chart2.vg.json";
+    var specVis6 = "js/alluvial_diagram.vg.json";
+
+    vegaEmbed('#choropleth_map', specVis1).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#bubble_chart', specVis2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#radial_plot', specVis3).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#radar_chart', specVis4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#radar_chart2', specVis5).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#alluvial_diagram', specVis6).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+
+</body>
+</html>
