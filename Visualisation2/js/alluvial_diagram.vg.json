@@ -705,9 +705,9 @@
         {
             "name": "color",
             "type": "ordinal",
-            "range": ["#e41a1c", "#984ea3", "#ff7f00", "#a6cee3", "#377eb8", "#a65628", "#e37383",
-                     "#CC7722", "#FF7518", "#FFE5B4", "#D8BFD8", "#C9A9A6", "#F89880", "#C19A6B", "#967969", "#80461B",
-                     "#D2B48C", "#CBC3E3", "#CCCCFF", "#A7C7E7", "#96DED1", "#7393B3", "#5D3FD3"],
+            "range": ["#2ed0c5", "#8ae0ff", "#d6b6fa", "#9d53f2", "#E30B5C", "#faa7b6", "#a65628",
+                     "#808000", "#B4C424", "#FFFF8F", "#DAA520", "#CC7722", "#DAA06D", "#80461B", "#967969", "#D2B48C",
+                     "#7393B3", "#F0FFFF", "#A7C7E7", "#9FE2BF", "#5F8575", "#E6E6FA", "#4169E1"],
             "domain": ["America", "East Asia", "Europe", "Non South East Asia", "South Asia", "South East Asia", "West Asia",
                        "Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Labuan", "Melaka", "Negeri Sembilan", "Pahang", "Penang",
                        "Perak", "Perlis", "Putrajaya", "Sabah", "Sarawak", "Selangor", "Terengganu"]
@@ -776,7 +776,7 @@
                         "signal": "!groupSelector && (groupHover.stack1 == datum.stack1 || groupHover.stack2 == datum.stack2) ? 1 : 0"
                     },
                     "tooltip": {
-                        "signal": "{\"Tourist from the Continent of\": datum.stack1, \"State\": datum.stack2, \"Total Arrivals\": format(datum.size, ',.0f')}"
+                        "signal": "{\"Tourist from the Continent of\": datum.stack1, \"State\": datum.stack2, \"Total Tourist Arrivals\": format(datum.size, ',.0f')}"
                     }
                 },
                 "hover": {
@@ -801,7 +801,7 @@
                     "y2": {"field": "scaledY1"},
                     "fillOpacity": {"value": 0.8},
                     "tooltip": {
-                        "signal": "datum.groupID + ' has ' + format(datum.total, ',.0f') + ' total tourist arrivals.'"
+                        "signal": "datum.groupID + ' has a total of ' + format(datum.total, ',.0f') + ' tourist arrivals.'"
                     }
                 },
                 "hover": {"fillOpacity": {"value": 1}}
