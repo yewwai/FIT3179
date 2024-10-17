@@ -1,0 +1,926 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v3.0.json",
+    "width": 1000,
+    "height": 600,
+    "data": [
+        {
+            "name": "rawData",
+            "values": [
+                {
+                    "Continent": "America",
+                    "State": "Johor",
+                    "Total_Arrivals": 9861
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Johor",
+                    "Total_Arrivals": 464974                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Johor",
+                    "Total_Arrivals": 51181
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Johor",
+                    "Total_Arrivals": 18310                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Johor",
+                    "Total_Arrivals": 67553                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Johor",
+                    "Total_Arrivals": 7275410
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Johor",
+                    "Total_Arrivals": 17890                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Kedah",
+                    "Total_Arrivals": 110758
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Kedah",
+                    "Total_Arrivals": 574597                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Kedah",
+                    "Total_Arrivals": 390134
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Kedah",
+                    "Total_Arrivals": 146073                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Kedah",
+                    "Total_Arrivals": 183272                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Kedah",
+                    "Total_Arrivals": 1045980
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Kedah",
+                    "Total_Arrivals": 220484                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Kelantan",
+                    "Total_Arrivals": 2969
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Kelantan",
+                    "Total_Arrivals": 27712
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Kelantan",
+                    "Total_Arrivals": 3659                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Kelantan",
+                    "Total_Arrivals": 18674                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Kelantan",
+                    "Total_Arrivals": 35934
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Kelantan",
+                    "Total_Arrivals": 3489                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 314172
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 3342480                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 1082939
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 514170                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 1038683                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 8019347
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Kuala Lumpur",
+                    "Total_Arrivals": 303758                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Labuan",
+                    "Total_Arrivals": 810
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Labuan",
+                    "Total_Arrivals": 8809                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Labuan",
+                    "Total_Arrivals": 1651
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Labuan",
+                    "Total_Arrivals": 602                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Labuan",
+                    "Total_Arrivals": 11802                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Labuan",
+                    "Total_Arrivals": 338464
+                },
+                {
+                    "Continent": "America",
+                    "State": "Melaka",
+                    "Total_Arrivals": 46253
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Melaka",
+                    "Total_Arrivals": 1486596                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Melaka",
+                    "Total_Arrivals": 192736
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Melaka",
+                    "Total_Arrivals": 88026                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Melaka",
+                    "Total_Arrivals": 247572                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Melaka",
+                    "Total_Arrivals": 4220615
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Melaka",
+                    "Total_Arrivals": 61069                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 2159
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 11891                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 16422
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 6966                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 15879                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 532780
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Negeri Sembilan",
+                    "Total_Arrivals": 18272                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Pahang",
+                    "Total_Arrivals": 54437
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Pahang",
+                    "Total_Arrivals": 1475469                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Pahang",
+                    "Total_Arrivals": 259049
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Pahang",
+                    "Total_Arrivals": 105098                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Pahang",
+                    "Total_Arrivals": 479448                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Pahang",
+                    "Total_Arrivals": 2322400
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Pahang",
+                    "Total_Arrivals": 152766                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Penang",
+                    "Total_Arrivals": 149665
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Penang",
+                    "Total_Arrivals": 681596                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Penang",
+                    "Total_Arrivals": 455832
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Penang",
+                    "Total_Arrivals": 190781                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Penang",
+                    "Total_Arrivals": 90087                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Penang",
+                    "Total_Arrivals": 2020877
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Penang",
+                    "Total_Arrivals": 183025                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Perak",
+                    "Total_Arrivals": 17095
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Perak",
+                    "Total_Arrivals": 19609                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Perak",
+                    "Total_Arrivals": 79011
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Perak",
+                    "Total_Arrivals": 16635                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Perak",
+                    "Total_Arrivals": 38938                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Perak",
+                    "Total_Arrivals": 339536
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Perak",
+                    "Total_Arrivals": 11155                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Perlis",
+                    "Total_Arrivals": 1560
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Perlis",
+                    "Total_Arrivals": 737                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Perlis",
+                    "Total_Arrivals": 1471                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Perlis",
+                    "Total_Arrivals": 3623
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Perlis",
+                    "Total_Arrivals": 263                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 9025
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 266504                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 72367
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 59290                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 159390                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 581654
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Putrajaya",
+                    "Total_Arrivals": 89686                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Sabah",
+                    "Total_Arrivals": 64561
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Sabah",
+                    "Total_Arrivals": 2288098                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Sabah",
+                    "Total_Arrivals": 114107
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Sabah",
+                    "Total_Arrivals": 60393                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Sabah",
+                    "Total_Arrivals": 6854                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Sabah",
+                    "Total_Arrivals": 2610152
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Sabah",
+                    "Total_Arrivals": 2613                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 46217
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 114292                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 99423
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 33531                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 8969                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 4837917
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Sarawak",
+                    "Total_Arrivals": 1638                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Selangor",
+                    "Total_Arrivals": 173863
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Selangor",
+                    "Total_Arrivals": 1290889                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Selangor",
+                    "Total_Arrivals": 561465
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Selangor",
+                    "Total_Arrivals": 283681                    
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Selangor",
+                    "Total_Arrivals": 631091                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Selangor",
+                    "Total_Arrivals": 3101730
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Selangor",
+                    "Total_Arrivals": 222077                    
+                },
+                {
+                    "Continent": "America",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 18531
+                },
+                {
+                    "Continent": "East Asia",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 20244                    
+                },
+                {
+                    "Continent": "Europe",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 170830
+                },
+                {
+                    "Continent": "Non South East Asia",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 21748                  
+                },                
+                {
+                    "Continent": "South Asia",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 14585                    
+                },
+                {
+                    "Continent": "South East Asia",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 43269
+                },
+                {
+                    "Continent": "West Asia",
+                    "State": "Terengganu",
+                    "Total_Arrivals": 5529                    
+                }
+            ],
+            "transform": [
+                {
+                    "type": "formula",
+                    "expr": "datum['Continent']",
+                    "as": "stack1"
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.State",
+                    "as": "stack2"
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.Total_Arrivals",
+                    "as": "size"
+                }
+            ]
+        },
+        {
+            "name": "nodes",
+            "source": "rawData",
+            "transform": [
+                {
+                    "type": "filter",
+                    "expr": "!groupSelector || groupSelector.stack1 == datum.stack1 || groupSelector.stack2 == datum.stack2"
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.stack1 + datum.stack2",
+                    "as": "key"
+                },
+                {
+                    "type": "fold",
+                    "fields": ["stack1", "stack2"],
+                    "as": ["stack", "groupID"]
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.stack == 'stack1' ? datum.stack1 + ' ' + datum.stack2 : datum.stack2 + ' ' + datum.stack1",
+                    "as": "sortField"
+                },
+                {
+                    "type": "stack",
+                    "groupby": ["stack"],
+                    "sort": {"field": "sortField", "order": "descending"},
+                    "field": "size"
+                },
+                {
+                    "type": "formula",
+                    "expr": "(datum.y0 + datum.y1) / 2",
+                    "as": "yc"
+                }
+            ]
+        },
+        {
+            "name": "groups",
+            "source": "nodes",
+            "transform": [
+                {
+                    "type": "aggregate",
+                    "groupby": ["stack", "groupID"],
+                    "fields": ["size"],
+                    "ops": ["sum"],
+                    "as": ["total"]
+                },
+                {
+                    "type": "stack",
+                    "groupby": ["stack"],
+                    "sort": {"field": "groupID", "order": "descending"},
+                    "field": "total"
+                },
+                {
+                    "type": "formula",
+                    "expr": "scale('y', datum.y0)",
+                    "as": "scaledY0"
+                },
+                {
+                    "type": "formula",
+                    "expr": "scale('y', datum.y1)",
+                    "as": "scaledY1"
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.stack == 'stack1'",
+                    "as": "rightLabel"
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.total / domain('y')[1]",
+                    "as": "percentage"
+                }
+            ]
+        },
+        {
+            "name": "destinationNodes",
+            "source": "nodes",
+            "transform": [
+                {
+                    "type": "filter",
+                    "expr": "datum.stack == 'stack2'"
+                }
+            ]
+        },
+        {
+            "name": "edges",
+            "source": "nodes",  
+            "transform": [
+                {
+                    "type": "filter",
+                    "expr": "datum.stack == 'stack1'"
+                },
+                {
+                    "type": "lookup",
+                    "from": "destinationNodes",
+                    "key": "key",
+                    "fields": ["key"],
+                    "as": ["target"]
+                },
+                {
+                    "type": "linkpath",
+                    "orient": "horizontal",
+                    "shape": "diagonal",
+                    "sourceY": {"expr": "scale('y', datum.yc)"},
+                    "sourceX": {"expr": "scale('x', 'stack1') + bandwidth('x')"},
+                    "targetY": {"expr": "scale('y', datum.target.yc)"},
+                    "targetX": {"expr": "scale('x', 'stack2')"}
+                },
+                {
+                    "type": "formula",
+                    "expr": "range('y')[0] - scale('y', datum.size)",
+                    "as": "strokeWidth"
+                },
+                {
+                    "type": "formula",
+                    "expr": "datum.size / domain('y')[1]",
+                    "as": "percentage"
+                }
+            ]
+        }
+    ],
+    "scales": [
+        {
+            "name": "x",
+            "type": "band",
+            "range": "width",
+            "domain": ["stack1", "stack2"],
+            "paddingOuter": 0.05,
+            "paddingInner": 0.95
+        },
+        {
+            "name": "y",
+            "type": "linear",
+            "range": "height",
+            "domain": {"data": "nodes", "field": "y1"}
+        },
+        {
+            "name": "color",
+            "type": "ordinal",
+            "range": ["#2ed0c5", "#8ae0ff", "#d6b6fa", "#9d53f2", "#E30B5C", "#faa7b6", "#a65628",
+                     "#808000", "#B4C424", "#FFFF8F", "#DAA520", "#CC7722", "#DAA06D", "#80461B", "#967969", "#D2B48C",
+                     "#7393B3", "#F0FFFF", "#A7C7E7", "#9FE2BF", "#5F8575", "#E6E6FA", "#4169E1"],
+            "domain": ["America", "East Asia", "Europe", "Non South East Asia", "South Asia", "South East Asia", "West Asia",
+                       "Johor", "Kedah", "Kelantan", "Kuala Lumpur", "Labuan", "Melaka", "Negeri Sembilan", "Pahang", "Penang",
+                       "Perak", "Perlis", "Putrajaya", "Sabah", "Sarawak", "Selangor", "Terengganu"]
+        },
+        {
+            "name": "stackNames",
+            "type": "ordinal",
+            "range": ["Continent", "State"],
+            "domain": ["stack1", "stack2"]
+        }
+    ],
+    "axes": [
+        {
+            "orient": "top",
+            "scale": "x",
+            "domain": false,
+            "ticks": false,
+            "labelPadding": 20,
+            "encode": {
+                "labels": {
+                    "update": {
+                        "text": {
+                            "scale": "stackNames",
+                            "field": "value",
+                            "fontWeight": "bold",
+                            "fontSize": 14
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "orient": "left",
+            "scale": "y",
+            "labels": false,
+            "domain": false,
+            "ticks": false
+        }
+
+    ],
+    "marks": [
+        {
+            "type": "path",
+            "name": "edgeMark",
+            "from": {"data": "edges"},
+            "clip": true,
+            "encode": {
+                "update": {
+                    "stroke": [
+                        {
+                            "test": "groupSelector && groupSelector.stack == 'stack1'",
+                            "scale": "color",
+                            "field": "stack2"
+                        },
+                        {
+                            "scale": "color",
+                            "field": "stack1"
+                        }
+                    ],
+                    "strokeWidth": {"field": "strokeWidth"},
+                    "path": {"field": "path"},
+                    "strokeOpacity": {
+                        "signal": "!groupSelector && (groupHover.stack1 == datum.stack1 || groupHover.stack2 == datum.stack2) ? 0.9 : 0.3"
+                    },
+                    "zindex": {
+                        "signal": "!groupSelector && (groupHover.stack1 == datum.stack1 || groupHover.stack2 == datum.stack2) ? 1 : 0"
+                    },
+                    "tooltip": {
+                        "signal": "{\"Tourist from the Continent of\": datum.stack1, \"State\": datum.stack2, \"Total Tourist Arrivals\": format(datum.size, ',.0f')}"
+                    }
+                },
+                "hover": {
+                    "strokeOpacity": {
+                        "value": 1
+                    }
+                }
+            }
+        },
+        {
+            "type": "rect",
+            "name": "groupMark",
+            "from": {"data": "groups"},
+            "encode": {
+                "enter": {
+                    "fill": {"scale": "color", "field": "groupID"},
+                    "width": {"scale": "x", "band": 1}
+                },
+                "update": {
+                    "x": {"scale": "x", "field": "stack"},
+                    "y": {"field": "scaledY0"},
+                    "y2": {"field": "scaledY1"},
+                    "fillOpacity": {"value": 0.8},
+                    "tooltip": {
+                        "signal": "datum.groupID + ' has a total of ' + format(datum.total, ',.0f') + ' tourist arrivals.'"
+                    }
+                },
+                "hover": {"fillOpacity": {"value": 1}}
+            } 
+        },
+        {
+            "type": "text",
+            "from": {"data": "groups"},
+            "interactive": false,
+            "encode": {
+                "update": {
+                    "x": {
+                        "signal": "scale('x', datum.stack) + (datum.rightLabel ? bandwidth('x') + 8 : -8)"
+                    },
+                    "yc": {"signal" : "(datum.scaledY0 + datum.scaledY1) / 2"},
+                    "align": {"signal": "datum.rightLabel ? 'left' : 'right'"},
+                    "baseline": {"value": "middle"},
+                    "fontWeight": {"value": "bold"},
+                    "text": {"signal": "abs(datum.scaledY0 - datum.scaledY1) > 13 ? datum.groupID: ''"}
+                }
+            }
+        },
+        {
+            "type": "group",
+            "data": [
+                {
+                    "name": "dataForShowAll",
+                    "values": [{}],
+                    "transform": [{"type": "filter", "expr": "groupSelector"}]
+                }
+            ],
+            "encode" : {
+                "enter": {
+                    "xc": {"signal": "width / 2"},
+                    "y": {"value" : 30},
+                    "width": {"value": 80},
+                    "height": {"value": 30}
+                }
+            },
+            "marks": [
+                {
+                    "type": "group",
+                    "name": "groupReset",
+                    "from": {"data": "dataForShowAll"},
+                    "encode": {
+                        "enter": {
+                            "cornerRadius": {"value": 6},
+                            "fill": {"value": "#f5f5f5"},
+                            "stroke": {"value": "#c1c1c1"},
+                            "strokeWidth": {"value": 2},
+                            "height": {"field": {"group": "height"}},
+                            "width": {"field": {"group": "width"}}
+                    },
+                    "update": {"opacity": {"value": 1}},
+                    "hover": {"opacity": {"value": 0.7}}
+                    },
+                    "marks": [
+                        {
+                            "type": "text",
+                            "interactive": false,
+                            "encode": {
+                                "enter": {
+                                    "xc": {
+                                        "field": {"group": "width"},
+                                        "mult": 0.5
+                                    },
+                                    "yc": {
+                                        "field": {"group": "height"},
+                                        "mult": 0.5,
+                                        "offset": 2
+                                    },
+                                    "align": {"value": "center"},
+                                    "baseline": {"value": "middle"},
+                                    "fontWeight": {"value": "bold"},
+                                    "text": {"value": "Show All"}
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "signals": [
+        {
+            "name": "groupHover",
+            "value": {},
+            "on": [
+                {
+                    "events": "@groupMark:mouseover",
+                    "update": "{stack1:datum.stack == 'stack1' && datum.groupID, stack2:datum.stack == 'stack2' && datum.groupID}"
+                },
+                {
+                    "events": "mouseout",
+                    "update": "{}"
+                }
+            ]
+        },
+        {
+            "name": "groupSelector",
+            "value": false,
+            "on": [
+                {
+                    "events": "@groupMark:click!",
+                    "update": "{stack:datum.stack, stack1: datum.stack == 'stack1' && datum.groupID, stack2: datum.stack == 'stack2' && datum.groupID}"
+                },
+                {
+                    "events": [
+                        {
+                            "type": "click",
+                            "markname": "groupReset"
+                        },
+                        {
+                            "type": "dblclick"
+                        }
+                    ],
+                    "update": "false"
+                }
+            ]
+        }
+    ]
+}

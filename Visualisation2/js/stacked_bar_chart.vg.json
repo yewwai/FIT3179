@@ -1,0 +1,45 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/yewwai/FIT3179/refs/heads/main/Visualisation2/data/mode_of_transport.csv"
+    },
+    "width": 500,
+    "height": 500,
+    "layer": [
+        {
+            "mark": "bar",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "ordinal",
+                    "axis": {
+                        "labelAngle": 0
+                    },
+                    "title": "Year"
+                },
+                "y": {
+                    "aggregate": "sum",
+                    "field": "Tourist_Arrivals",
+                    "type": "quantitative",
+                    "axis": {
+                        "title": "Total Arrivals"
+                    }
+                },
+                "color": {
+                    "field": "Mode_of_Transport",
+                    "type": "nominal",
+                    "scale": {
+                        "domain": ["Sea", "Land", "Air", "Rail"],
+                        "range": ["#FFA07A", "#6495ED", "#CCCCFF", "#9FE2BF"]
+                    },
+                    "title": "Mode of Transport"
+                },
+                "tooltip": [
+                    {"field": "Year", "type": "ordinal"},
+                    {"field": "Mode_of_Transport", "type": "nominal", "title": "Mode of Transport"},
+                    {"field": "Tourist_Arrivals", "type": "quantitative", "format": ",", "title": "Tourist Arrivals"}
+                ]
+            }
+        }
+    ]
+}
