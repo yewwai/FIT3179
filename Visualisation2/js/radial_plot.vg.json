@@ -67,7 +67,7 @@
                     "type": "nominal",
                     "scale": {
                         "range": ["#6495ED", "#E3735E", "#FFDEAD", "#D8BFD8", "#C9A9A6", "#F89880", "#C19A6B", 
-                        "#00A36C", "#7393B3"]
+                        "#097969", "#7393B3"]
                     }
                 },
                 "opacity": {
