@@ -107,6 +107,7 @@ body {
     width: 100%;
     padding: 20px;
     margin: 10px auto; /* Center the container horizontally */
+    max-width: 1000px;
 }
 
 /* Visualisation Container */
