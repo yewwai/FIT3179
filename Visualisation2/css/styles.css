@@ -103,7 +103,8 @@ body {
     text-align: right; /* Align buttons to the right */
     padding-left: 20px; /* Adjust the padding */
     float: right; /* Ensures the buttons shift to the right */
-    margin-right: 120px; /* Adds extra space from the right */
+    margin-right: 130px; /* Adds extra space from the right */
+    margin-top: -35px;
 }
 
 /* Footer */
