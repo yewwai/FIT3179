@@ -14,6 +14,7 @@ body {
     margin-right: 190px;
 }
 
+
 /* Title Section */
 .title {
     display: flex;
@@ -52,11 +53,30 @@ body {
     width: 100%;
 }
 
+.card2 {
+    background-color: #c89d71;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    display:inline-block;
+    width: 100%;
+}
+
+.text-card2 {
+    font-size: 20px;
+    margin-bottom: 11px;
+    color: rgb(74, 72, 72);
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: center;
+}
+
 .card h2 {
     font-size: 38px;
     font-weight: 600;
     margin-bottom: 16px;
-    color: #ad5618;
+    color: #ab512b;
     font-family: "Signika", sans-serif;
     text-align: center;
 
@@ -135,4 +155,6 @@ body {
     padding-right: 28px;
     text-align: justify;
 }
+
+
 
