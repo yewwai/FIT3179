@@ -10,8 +10,9 @@ body {
 
 .container {
     max-width: 1000px;
-    margin-left: 190px;
-    margin-right: 190px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 100%;
 }
 
 
@@ -98,11 +99,22 @@ body {
     text-align: center;
 }
 
+.flex-container {
+    display: flex;
+    text-align: justify;
+    border-radius: 10px;
+    align-items: center;
+    color: black;
+    width: fit-content;
+    padding: 20px;
+
+}
+
 /* Visualisation Container */
 .vis-container {
     margin: 10px auto; /* Center the container horizontally */
     width: fit-content; /* Automatically adjusts to the content size */
-    max-width: 1000px; /* Set a max width for the container */
+    max-width: 800px; /* Set a max width for the container */
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
