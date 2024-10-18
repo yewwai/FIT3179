@@ -98,13 +98,6 @@ body {
     text-align: center;
 }
 
-/* Grid Layout for Charts */
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-}
-
 /* Visualisation Container */
 .vis-container {
     margin: 10px auto; /* Center the container horizontally */
