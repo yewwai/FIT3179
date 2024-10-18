@@ -7,6 +7,10 @@
         "fontSize": 16
     },
     "padding": {"left": 10, "right": 10, "top": 10, "bottom": 18},
+    "autosize": {
+        "type": "fit", 
+        "contains": "padding"
+    },
     "data": {
         "url": "https://raw.githubusercontent.com/yewwai/FIT3179/refs/heads/main/Visualisation2/data/tourist_expenditure_by_country.csv"
     }, 
