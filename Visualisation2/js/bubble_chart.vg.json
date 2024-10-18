@@ -258,35 +258,6 @@
                 "type": "text",
                 "align": "left",
                 "baseline": "middle",
-                "dx": 14,
-                "fontSize": 10,
-                "fontStyle": "italic"
-            },
-            "encoding": {
-                "text": {"field": "Country", "type": "nominal"},
-                "color": {"value": "black"},
-                "opacity": {
-                    "condition": [
-                        {
-                            "test": "datum['Country'] == 'United Kingdom'",
-                            "value": 1
-                        }
-                    ],
-                    "value": 0
-                },
-                "tooltip": [
-                    {"field": "Country", "type": "nominal"},
-                    {"field": "Tourist_Arrivals", "type": "quantitative", "format": ",", "title": "Tourist Arrivals"},
-                    {"field": "Average_Per_Capita(RM)", "type": "quantitative", "format": ",", "title": "Average per Capita Spending (RM)"},
-                    {"field": "Average_Per_Diem(RM)", "type": "quantitative", "format": ",", "title": "Average per Diem Spending (RM)"}
-                ]
-            }
-        },
-        {
-            "mark": {
-                "type": "text",
-                "align": "left",
-                "baseline": "middle",
                 "dx": 12,
                 "dy": 6,
                 "fontSize": 10,
@@ -344,6 +315,35 @@
         {
             "mark": {
                 "type": "text",
+                "align": "right",
+                "baseline": "middle",
+                "dx": -15,
+                "fontSize": 10,
+                "fontStyle": "italic"
+            },
+            "encoding": {
+                "text": {"field": "Country", "type": "nominal"},
+                "color": {"value": "black"},
+                "opacity": {
+                    "condition": [
+                        {
+                            "test": "datum['Country'] == 'Taiwan'",
+                            "value": 1
+                        }
+                    ],
+                    "value": 0
+                },
+                "tooltip": [
+                    {"field": "Country", "type": "nominal"},
+                    {"field": "Tourist_Arrivals", "type": "quantitative", "format": ",", "title": "Tourist Arrivals"},
+                    {"field": "Average_Per_Capita(RM)", "type": "quantitative", "format": ",", "title": "Average per Capita Spending (RM)"},
+                    {"field": "Average_Per_Diem(RM)", "type": "quantitative", "format": ",", "title": "Average per Diem Spending (RM)"}
+                ]
+            }
+        },        
+        {
+            "mark": {
+                "type": "text",
                 "align": "center",
                 "baseline": "middle",
                 "fontSize": 9,
@@ -371,6 +371,38 @@
                 "text": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 2103.6", "value": ["Thailand brings a high volume of tourist to Malaysia, ", "but their spending tends to be lower."]}},
                 "color": {"value": "black"},
                 "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 2103.6", "value": 1}, "value": 0}
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "middle",
+                "fontSize": 9,
+                "fontStyle": "bold",
+                "dx": 110,
+                "dy": -1
+            },
+            "encoding": {
+                "text": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 6093.5", "value": ["UK tourists demonstrate moderate spending ", "with a balanced volume of tourist arrivals."]}},
+                "color": {"value": "black"},
+                "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 6093.5", "value": 1}, "value": 0}
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "align": "center",
+                "baseline": "middle",
+                "fontSize": 9,
+                "fontStyle": "bold",
+                "dx": 80,
+                "dy": -1
+            },
+            "encoding": {
+                "text": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 5832.2", "value": ["Taiwanese tourists spend more ", "per capita despite lower arrival ", "numbers compared to other", "East Asian countries."]}},
+                "color": {"value": "black"},
+                "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 5832.2", "value": 1}, "value": 0}
             }
         }
     ]
