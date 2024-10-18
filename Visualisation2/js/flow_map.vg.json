@@ -3,6 +3,10 @@
     "width": 900,
     "height": 500,
     "padding": {"bottom": 18},
+    "autosize": {
+        "type": "fit", 
+        "contains": "padding"
+      },
     "config": {
         "style": {
             "cell": {
