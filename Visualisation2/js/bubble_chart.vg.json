@@ -388,22 +388,6 @@
                 "color": {"value": "black"},
                 "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 6093.5", "value": 1}, "value": 0}
             }
-        },
-        {
-            "mark": {
-                "type": "text",
-                "align": "center",
-                "baseline": "middle",
-                "fontSize": 9,
-                "fontStyle": "bold",
-                "dx": 80,
-                "dy": -1
-            },
-            "encoding": {
-                "text": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 5832.2", "value": ["Taiwanese tourists spend more ", "per capita despite lower arrival ", "numbers compared to other", "East Asian countries."]}},
-                "color": {"value": "black"},
-                "opacity": {"condition": {"test": "datum['Average_Per_Capita(RM)'] == 5832.2", "value": 1}, "value": 0}
-            }
         }
     ]
 }
