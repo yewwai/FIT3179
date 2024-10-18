@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     font-family: 'DM Serif Display', serif;
-    color: #7d6653; /* White text for headings */
+    color: #7d6653;
     white-space: nowrap;
 }
 
