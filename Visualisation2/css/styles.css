@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcebda;
+    color: #fff;
+    padding: 32px;
+    margin: 0;
+    justify-items: center;
+    font-size: 15px;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+/* Title Section */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    padding-left: 20px;
+
+}
+
+.title h1 {
+    font-size: 60px;
+    font-weight: 590;
+    display: flex;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+    color: #7d6653; /* White text for headings */
+    white-space: nowrap;
+}
+
+.title-icon {
+    margin-left: -20px;
+    width: 110px;
+    height: 90px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+/* Card Style */
+.card {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+    display:inline-block;
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #ad5618;
+    font-family: "Signika", sans-serif;
+    text-align: center;
+
+}
+
+.card-body {
+    font-size: 15px;
+    padding: 0px;
+    padding-bottom: 0px;
+    line-height: 1.5;
+}
+
+.text {
+    font-size: 17px;
+    margin-bottom: 11px;
+    color: #000000;
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: center;
+}
+
+/* Grid Layout for Charts */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+/* Visualisation Container */
+.vis-container {
+    margin: 10px auto; /* Center the container horizontally */
+    width: fit-content; /* Automatically adjusts to the content size */
+    max-width: 1000px; /* Set a max width for the container */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    color: black;
+    display: flex;
+    text-align: justify;
+}
+
+.button-container {
+    text-align: right; /* Align buttons to the right */
+    padding-left: 20px; /* Adjust the padding */
+    float: right; /* Ensures the buttons shift to the right */
+    margin-right: 150px; /* Adds extra space from the right */
+}
+
+/* Footer */
+.footer-text {
+    font-size: 12px;
+    margin-top: 16px;
+    color: grey;
+    text-align: left;
+}
+
+.text-remark {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    font-size: 13px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-bottom: 16px;  
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+  
+.text-side {
+    font-size: 17px;
+    margin-bottom: 0px;
+    color: #000000;
+    padding-left: 28px;
+    padding-right: 28px;
+    text-align: justify;
+}
+

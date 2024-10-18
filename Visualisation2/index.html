@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toursim in Malaysia</title>
+    <!-- Import Vega & Vega-Lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Import pure.css -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lilita+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Fredoka:wght@300..700&family=Lilita+One&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+</head>
+
+<body>
+  
+  <div class = "container">
+
+    <!-- Title of the page-->
+    <div class = "title">
+      <h1>
+        <img src = "images/title_icon.png" alt="Title Icon" class="title-icon">
+        Exploring Malaysia's Tourism Footprint
+      </h1>
+    </div>
+
+    <!-- Flow Map -->
+    <div class = "card">
+        <h2>Global Tourist Routes: From All Corners to Malaysia</h2>
+        <p class = "text-remark">
+          Drag the slider below to explore the rankings of tourist arrivals
+        </p>
+        <div class = "vis-container">
+          <div id = "flow_map"></div>
+        </div>
+    </div>
+
+    <!-- Alluvial Diagram -->
+    <div class = "card">
+        <h2>Where They Go: Tourist Flows from Continents to States</h2>
+        <p class = "text-remark">
+          Click on any bar to explore a more detailed view of tourist flows
+        </p>
+        <div class = "vis-container">
+          <div id = "alluvial_diagram"></div>
+        </div>
+        <p class = "text">
+          <b style = "color: #DAA520; font-weight: 900;">Kuala Lumpur</b> attracts tourists from all continents, with the majority 
+          <br>
+          coming from <b style = "color: #faa7b6;">South East Asia</b> and <b style = "color: #d6b6fa;">Europe</b>. As <b>Malaysia's capital</b>
+          <br>
+          and a <b>major tourism hub</b>, its connectivity and urban appeal 
+          <br>
+          make it a <b>popular destination</b> for a diverse group of visitors.
+        </p>
+    </div>
+
+    <!-- Bubble Chart -->
+    <div class = "card">
+      <h2>Global Travel Splurge: Who Spends the Most in Malaysia?</h2>
+      <p class = text-remark>
+        Zoom in for a closer look at the data points.
+      </p>
+      <div class = "vis-container">
+        <div id = "bubble_chart"></div>
+      </div>
+    </div>
+
+    <!-- Radial Plot -->
+    <div class = "card">
+      <h2>Where They Spend: A Breakdown of Tourist Expenditure </h2>
+      <p class = "text-remark">
+        Click on any component in the legend to filter the chart based on your selection
+      </p>
+      <div class = "card-body vis-container">
+        <div style = "flex: 5;">
+          <div id = "radial_plot" style="width: 100%; height: auto; margin: auto; margin-right: 13px;"></div>
+          <div style="display: flex; align-items: center; padding-bottom: 15px;"></div>
+        </div>
+        <div style="flex: 4; padding-left: 15px;">
+          <p class = "text-side">
+            <b style = "color: #097969; font-weight: 900;">Shopping</b> takes up the <b>largest </b>portion of <b>tourists' expenditure</b>
+            , emphasizing <b>Malaysia's</b> strong appeal as a top shopping destination and often referred to as a <b>"shopping haven"</b>.
+          </p>
+          <p class = "text-side">
+            A <b>notable</b> portion of spending is also directed towards 
+            <b style = "color: #6495ED;">accommodation</b>, suggesting that tourists are staying for extended periods of time.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Radar Chart -->
+    <div class="card">
+      <h2>Why They Visit: A Glimpse into Tourist Motives and Activities</h2>
+      <div class="card-body vis-container" style="display: flex; justify-content: flex-start;">
+        <div style="flex: 3; padding-left: 50px; padding-right: 50px; text-align: justify; margin-top: 20px;">
+          <p class="text-side">
+            Tourists primarily visit Malaysia for <b>holiday purposes</b>, with significantly fewer traveling for business, sports or other activities — especially 
+            for <b>Singaporean</b> tourists. This indicates that they view Malaysia mainly as a <b>leisure destination</b>
+            rather than for work.
+          </p>
+          <p class="text-side">
+            While in Malaysia, tourists engage <b>heavily</b> in <b>shopping</b> and <b>sightseeing in cities</b>
+            . Activities like visiting islands, beaches, museums or attending cultural events draw less interest, suggesting their
+            trips are more focused on <b>urban experiences</b> and <b>consumer activities</b>, as illustrated in the radial plot above.
+          </p>
+        </div>
+        <div style="flex: 3; margin-left: auto; padding-left: 60px; padding-right: 20px;">
+          <div id="radar_chart" style="width: 100%; height: auto; margin: auto;"></div>
+        </div>
+      </div>
+    
+      <!-- Ensure the buttons are below the chart -->
+      <div class="button-container">
+        <button id="change-purpose-radar" style="margin-right: 10px;">Main Purposes</button>
+        <button id="change-activity-radar">Major Activities</button>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <p class = "footer-text">
+      Created and Designed by: How Yew Wai
+      <br>
+      Last Updated: 18th October 2024
+      <br>
+      Data Source: <a href = "https://data.tourism.gov.my/frontend/pdf/2019/publications/malaysia_tourist_profile/malaysia_tourist_profile_2019.pdf">Tourism Malaysia Data</a> by Ministry of Tourism, Arts and Culture Malaysia (Last Updated on 2019)
+    </p>
+  </div>
+  
+    
+    
+    
+
+
+  </div>
+
+  <script type="text/javascript">
+    var specVis1 = "js/flow_map.vg.json";
+    var specVis2 = "js/bubble_chart.vg.json";
+    var specVis3 = "js/radial_plot.vg.json";
+    var specVis4 = "js/radar_chart.vg.json";
+    var specVis5 = "js/radar_chart2.vg.json";
+    var specVis6 = "js/alluvial_diagram.vg.json";
+
+    vegaEmbed('#flow_map', specVis1).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#bubble_chart', specVis2).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#radial_plot', specVis3).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    let currentRadar = null;
+
+    // Function to embed the selected radar chart
+    function embedRadar(spec) {
+      if (currentRadar !== spec) {
+        vegaEmbed("#radar_chart", spec, { "actions": false }).then(() => {
+          currentRadar = spec;
+        }).catch(console.error);
+      }
+    }
+
+    embedRadar(specVis4)
+
+    const button1 = document.getElementById("change-purpose-radar");
+    const button2 = document.getElementById("change-activity-radar");
+
+    button1.addEventListener("click", () => {
+      embedRadar(specVis4);
+    });
+    button2.addEventListener("click", () => {
+      embedRadar(specVis5);
+    });
+
+    vegaEmbed('#alluvial_diagram', specVis6).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+
+</body>
+</html>
